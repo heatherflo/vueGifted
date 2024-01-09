@@ -20,6 +20,6 @@ export default {
 <style scoped lang="scss">
 .bg {
   background-color: rgb(233, 241, 240);
-  height: 100vh;
+  min-height: 100vh;
 }
 </style>

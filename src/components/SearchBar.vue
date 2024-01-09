@@ -21,7 +21,11 @@
         </div>
 
       </div>
-      <GiftBar />
+      <div class="col-9">
+        <section class="row">
+          <GiftBar :key="gift" />
+        </section>
+      </div>
 
     </section>
 

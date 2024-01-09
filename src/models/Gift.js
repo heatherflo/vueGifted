@@ -5,5 +5,6 @@ export class Gift {
     this.tag = data.tag
     this.opened = false
     this.url = data.url
+    this.id = data.id
   }
 }

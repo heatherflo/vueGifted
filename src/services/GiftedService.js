@@ -13,6 +13,11 @@ class GiftedService {
 
   }
 
+  async openGift(id) {
+    console.log('opening gifts', id)
+    const response = await api.put(`api/gifts/${id}`, { opened: true })
+  }
+
 
 }
 
