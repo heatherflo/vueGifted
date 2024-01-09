@@ -5,20 +5,23 @@
         <h3 class="p-3">
           Gifted
         </h3>
-        <form class="my-2 form-control">
-          <input class="mb-3" type="text" name="tag" placeholder="place tag here..." minlength="2" max="100">
+        <div class="form-control">
+          <form class="my-2">
+            <input class=" mb-3" type="text" name="tag" placeholder="place tag here..." minlength="2" max="100">
 
-          <input type="text" name="tag" placeholder="place URL here..." minlength="2" max="100">
-          <button class="mt-3">submit</button>
-        </form>
-        <hr class="line">
-        <form>
-          <p>Search GIFs</p>
-          <input type="text" name="tag" minlength="2" max="100">
-          <button class="mb-3"><i class="mdi mdi-magnify"></i></button>
-        </form>
+            <input type="text" name="tag" placeholder="place URL here..." minlength="2" max="100">
+            <button class="mt-3">submit</button>
+          </form>
+          <hr class="line">
+          <form>
+            <p>Search GIFs</p>
+            <input type="text" name="tag" minlength="2" max="100">
+            <button class="mb-3"><i class="mdi mdi-magnify"></i></button>
+          </form>
+        </div>
 
       </div>
+      <GiftBar />
 
     </section>
 
@@ -29,10 +32,13 @@
 <script>
 import { AppState } from '../AppState';
 import { computed, ref, onMounted } from 'vue';
+import GiftBar from './GiftBar.vue';
+
 export default {
   setup() {
-    return {}
-  }
+    return {};
+  },
+  components: { GiftBar }
 };
 </script>
 
@@ -40,6 +46,6 @@ export default {
 <style lang="scss" scoped>
 .bg {
   background-color: rgb(6, 138, 119);
-  background-size: cover;
+  height: 100vh
 }
 </style>

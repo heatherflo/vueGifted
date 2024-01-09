@@ -1,10 +1,12 @@
 <template>
-  <div class="home container-fluid">
+  <div class="home bg container-fluid">
     <SearchBar />
+
   </div>
 </template>
 
 <script>
+
 import SearchBar from '../components/SearchBar.vue';
 
 export default {
@@ -15,4 +17,9 @@ export default {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.bg {
+  background-color: rgb(233, 241, 240);
+  height: 100vh;
+}
+</style>
