@@ -16,6 +16,11 @@ class GiftedService {
   async openGift(id) {
     console.log('opening gifts', id)
     const response = await api.put(`api/gifts/${id}`, { opened: true })
+    console.log('api gift', response)
+    // AppState.gifts = response.data
+    // let newGift = response.data
+    // console.log('new Gift', newGift)
+    // AppState.gifts = newGift
   }
 
 
